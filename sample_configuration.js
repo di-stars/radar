@@ -1,8 +1,8 @@
 module.exports = {
   //Choose the connection to use by  --connection-config=redis
   //Is shared by chatmanager and radar both
-  connection_settings: {
-    default: {
+  connnection_settings: {
+    legacy: {
       redis_host: 'localhost',
       redis_port: 6379
     },
@@ -21,7 +21,7 @@ module.exports = {
       {
         host: 'localhost',
         port: 26381
-      }]
+      }
     },
     cluster2: {
       id: 'mymaster',
@@ -37,7 +37,7 @@ module.exports = {
       {
         host: 'localhost',
         port: 36381
-      }]
+      }
     }
   },
 

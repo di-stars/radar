@@ -23,6 +23,7 @@ var counter = 1000,
 
 exports['given a presence'] = {
   before: function(done){
+    configuration = configuration.connection_settings || configuration;
     Persistence.setConfig(configuration);
     Persistence.connect(done);
   },
